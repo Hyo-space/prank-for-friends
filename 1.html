@@ -28,14 +28,56 @@
     <br>
     <li><a href="5.html">After Party</a></li>
   </ol>
+  <style>
+    .grid-image {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin: 30px 0;
+    }
+    .grid-image img {
+    width:calc(33.333% - 10px);
+    margin:0 15px 15px 0;
+    }
+    .grid-image img:nth-of-type(3n),
+    .grid-image img:last-child {
+        margin-right:0;
+    }
+    @media screen and (max-width:640px){
+      .grid-image img {
+        width:calc(50% - 15px);
+      }
+    }
+    @media screen and (max-width:640px){
+      .grid-image img:nth-of-type(2n) {
+        margin-right:0;
+      }
+      .grid-image img:nth-of-type(3n) {
+        margin-right:15px;
+      }
+    }
+  </style>
   <br>
   <strong>탁회장</strong>: AKA VR다쓰베이더
-  <br><img src="tak.jpg" width="300">
-  <br><br><strong>쥬프로</strong>: AKA 라스트댄스
-  <br><img src="joo.jpeg" width="300">
-  <br><br><strong>찬누쿠노</strong>: AKA 간재미
-  <br><img src="chan.jpeg" width="300">
-  <br><br><strong>타이거팍</strong>: AKA 전봇대키스남
-  <br><img src="park.jpeg" width="300">
+  <br>
+  <div>
+    <img src="tak.jpg" width="300", height="500">
+    <img src="tak.gif" alt="" class="animated", width="300", height="500">
+  </div>
+  <br><br>
+  <strong>쥬프로</strong>: AKA 라스트댄스
+  <br>
+  <img src="joo.jpeg" width="300" height="500">
+  <img src="jun_dance.gif" alt="" class="animated", width="300", height="500">
+  <br><br>
+  <strong>찬누쿠노</strong>: AKA 간재미
+  <br>
+  <img src="chan.jpeg" width="300", height="500">
+  <img src="chan.gif" alt="" class="animated", width="300", height="500">
+  <br><br>
+  <strong>타이거팍</strong>: AKA 전봇대키스남
+  <br>
+  <img src="park.jpeg" width="300", height="500">
+  <img src="park_dance.gif" alt="" class="animated", width="300", height="500">
 </body>
 </html>
