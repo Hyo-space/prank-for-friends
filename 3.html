@@ -29,13 +29,43 @@
     <li><a href="5.html">After Party</a></li>
   </ol>
   <br>
-  <h2>야동 VR 파티</h2>
-  <br><img src="vr.jpg" width="500">
-  <script>
-    document.getElementById("vid").play();
-  </script>
+  <h2>Audult Video VR Exp.</h2>
+  <br>
+  <div class="grid-image">
+    <img src="vr.jpg" width="500">
+    <img src="vr_act.gif" alt="" class="animated", width="500", height="600">
+  </div>
+  <style>
+    .grid-image {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin: 30px 0;
+    }
+    .grid-image img {
+    width:calc(33.333% - 10px);
+    margin:0 15px 15px 0;
+    }
+    .grid-image img:nth-of-type(3n),
+    .grid-image img:last-child {
+        margin-right:0;
+    }
+    @media screen and (max-width:640px){
+      .grid-image img {
+        width:calc(50% - 15px);
+      }
+    }
+    @media screen and (max-width:640px){
+      .grid-image img:nth-of-type(2n) {
+        margin-right:0;
+      }
+      .grid-image img:nth-of-type(3n) {
+        margin-right:15px;
+      }
+    }
+  </style>
   <br><br>
-  <h3>야동 위스키 파티</h3>
+  <h3>Whisky Party with AV</h3>
   <br><img src="whisky.jpeg" width="500">
 </body>
 </html>
