@@ -6,40 +6,75 @@
 </head>
 
 <body>
+  <h1>Mr. 탁's Party</h1>
   <style>
+    h1{
+      font-size:60px;
+      text-align: center;
+      font-family: cursive;
+      }
     a {
       color:black;
       text-decoration: none;
       font-size: 30px;
+      padding-left: 25px;
     }
     li {
       font-size: 30px;
+
+    }
+    ol {
+      padding-left:50px;
+    }
+    #nav {
+      list-style:none;
+      height:40px;
+      padding:5px 1px;
+      margin:0;
+      background:#EAECEE;
+      text-align: center;
+    }
+    #nav li{
+
+      position:relative;
+      display: inline;
+    }
+    #nav li a{
+      display: inline-block;
+      font-family: "굴림";
+      font-weight: :bold;
+      font-size: 30px;
+      padding:10px;
+      margin:0;
+      text-decoration: none;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     }
   </style>
-  <h1><a href="index.html">Party Information</a></h1>
-  <ol>
-    <li><a href="1.html" style="color:red;text-decoration:underline">Host & Guest</a></li>
-    <br>
+
+  <ul id="nav">
+    <li><a href="index.html">Main</a></li>
+    <li><a href="1.html">Host & Guest</a></li>
     <li><a href="2.html">Location</a></li>
-    <br>
     <li><a href="3.html">Event</a></li>
-    <br>
     <li><a href="4.html">Meta Guest</a></li>
-    <br>
     <li><a href="5.html">After Party</a></li>
-  </ol>
+  </ul>
+
   <style>
+    h2 {
+      text-align: center;
+    }
     .grid-image {
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
-      margin: 30px 0;
+      margin: 20px 20px;
     }
     .grid-image img {
     width:calc(33.333% - 10px);
     margin:0 15px 15px 0;
     }
-    .grid-image img:nth-of-type(3n),
+    .grid-image img:nth-of-type(4n),
     .grid-image img:last-child {
         margin-right:0;
     }
@@ -55,42 +90,55 @@
       .grid-image img:nth-of-type(3n) {
         margin-right:15px;
       }
+      .grid-image img:nth-of-type(4n) {
+        margin-right:15px;
+      }
+    #grid {
+      font-size: 30px;
+      padding-left: 30px;
+      text-align: center;
+    }
+    }
+    #cen_img {
+      display: block;
+      margin: auto;
     }
   </style>
+
+  <br><br>
+  <h2>탁회장: AKA VR다쓰베이더</h2>
+
+  <div class="grid-image" id="grid">
+      <img id="cen_img" src="tak.jpg" width="300", height="500">
+      <img id="cen_img" src="tak.gif" alt="" class="animated" width="500" height="300" style="transform:rotate(90deg);">
+  </div>
+
   <br>
-  <strong>탁회장</strong>: AKA VR다쓰베이더
+  <br><br>
+  <h2>쥬프로: AKA 라스트댄스</h2>
   <br>
 
-  <div class="grid-image">
-    <img src="tak.jpg" width="300", height="500">
-    <img src="tak.gif" alt="" class="animated" width="500" height="300" style="transform:rotate(90deg);">
+  <div class="grid-image" id="grid">
+    <img id="cen_img" src="joo.jpeg" width="300" height="500">
+    <img id="cen_img" src="jun_dance.gif" alt="" class="animated" width="500" height="300" style="transform:rotate(90deg);">
   </div>
 
   <br><br>
-  <strong>쥬프로</strong>: AKA 라스트댄스
+  <h2>찬누쿠노: AKA 간재미</h2>
   <br>
 
-  <div class="grid-image">
-    <img src="joo.jpeg" width="300" height="500">
-    <img src="jun_dance.gif" alt="" class="animated" width="500" height="300" style="transform:rotate(90deg);">
+  <div class="grid-image" id="grid">
+    <img id="cen_img" src="chan.jpeg" width="300", height="500">
+    <img id="cen_img" src="chan.gif" alt="" class="animated" width="500" height="300" style="transform:rotate(90deg);">
   </div>
 
   <br><br>
-  <strong>찬누쿠노</strong>: AKA 간재미
+  <h2>타이거팍: AKA 전봇대키스남</h2>
   <br>
 
-  <div class="grid-image">
-    <img src="chan.jpeg" width="300", height="500">
-    <img src="chan.gif" alt="" class="animated" width="500" height="300" style="transform:rotate(90deg);">
-  </div>
-
-  <br><br>
-  <strong>타이거팍</strong>: AKA 전봇대키스남
-  <br>
-
-  <div class="grid-image">
-    <img src="park.jpeg" width="300", height="500">
-    <img src="park_dance.gif" alt="" class="animated" width="500" height="300" style="transform:rotate(90deg);">
+  <div class="grid-image" id="grid">
+    <img id="cen_img" src="park.jpeg" width="300", height="500">
+    <img id="cen_img" src="park_dance.gif" alt="" class="animated" width="500" height="300" style="transform:rotate(90deg);">
   </div>
 
 </body>
